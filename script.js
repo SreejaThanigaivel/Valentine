@@ -1,3 +1,7 @@
+let accesscode=prompt("please enter the secret code:");
+if(accesscode!== "SreeVish38"){
+  document.documentElement.innerHTML="<h1> Access Denied</h1><p>Incorrect code</p>";
+}
 let attempts = 0;
 
 function askPassword() {
@@ -56,4 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
       container.classList.remove("dimmed");
     });
   });
+
 });
